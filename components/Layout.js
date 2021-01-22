@@ -9,7 +9,10 @@ export default function Layout(props) {
         <title>News | Object Press</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charSet=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Object Press" />
 

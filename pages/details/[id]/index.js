@@ -1,14 +1,10 @@
-import { useRouter } from "next/router";
 import Layout from "../../../components/Layout";
 
-const Details = (props) => {
+const Details = ({ post }) => {
   const showdown = require("showdown");
   const converter = new showdown.Converter();
 
-  let details = props.post.body;
-
-  const router = useRouter();
-  const { id } = router.query;
+  let details = post.body;
 
   return (
     <>
