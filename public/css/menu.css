@@ -1,0 +1,2264 @@
+/*	--------------------------------------------------
+	:: Menu 
+	-------------------------------------------------- */
+
+    .flat-menu {
+	    margin:0;
+	    padding:0;
+	    position:relative;
+	    display:block;
+		width:auto;
+		z-index:99;
+		-webkit-box-sizing:border-box;
+	       -moz-box-sizing:border-box; 
+	            box-sizing:border-box;
+	}
+	
+	.flat-menu-fixed {
+	    position:fixed;
+		top:0;
+		left:0;
+		bottom:0;
+    }
+	
+	.flat-menu ul.flat-responsive-menu input {
+		position:relative;
+        display:none;
+	}
+	
+	.flat-menu label{
+        cursor:pointer;
+        font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:14px;
+	    color:#212121;
+		margin:0;
+		text-align:left;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li a {
+		color:#222;
+		font-size:18px;
+		 display: block;
+    padding: 10px 15px;
+	}	
+	.flat-menu ul.flat-responsive-menu li,
+    .flat-menu ul.flat-responsive-menu label{
+        cursor:pointer;
+        font-style:normal; 
+		letter-spacing:1px;
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:18px;
+		text-transform:uppercase;
+	    color:#212121;
+		margin:0;
+		padding:0;
+		text-align:left;
+    }
+	
+		.flat-menu ul.flat-responsive-menu {
+		width:100%;
+		list-style:none;
+		margin:0;
+        padding:0;
+	}
+	
+	.flat-menu ul.flat-responsive-menu > li {
+		position:relative;
+		-webkit-transition: all 0.6s ease-in-out;
+           -moz-transition: all 0.6s ease-in-out;
+		     -o-transition: all 0.6s ease-in-out;
+		        transition: all 0.6s ease-in-out;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li > label {
+		display:block;
+        padding:10px 15px 10px;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li > label i {
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-size:14px;
+		vertical-align:baseline;
+		margin-right:10px;
+	}
+	
+	.flat-menu ul.flat-responsive-menu:before,
+    .flat-menu ul.flat-responsive-menu:after{
+        content:""; 
+        display:table; 
+    }
+	
+    .flat-menu ul.flat-responsive-menu:after {
+        clear:both;
+    }
+	
+	.toggle-menu-input,
+	.toggle-menu-label{
+        display:none;
+    }
+	
+	.flat-menu ul.flat-responsive-menu a {
+        text-decoration:none;
+        padding:10px 15px;
+    }
+	
+/*	--------------------------------------------------
+	:: Dropdowns
+	-------------------------------------------------- */
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five{
+	    position:absolute; 
+		border:none;
+		outline:none;
+		margin:0;
+		padding:0;
+		list-style:none;
+		top:0;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li{ 
+		width:200px;
+		position:relative;
+		text-transform:uppercase;
+		text-align:left;
+		margin-top:-1px;
+		cursor:pointer;
+	}
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li:first-child {
+		border-top:none !important;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li a,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li a,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li a,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li a,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li a{
+		color:#fff;
+		text-decoration:none;
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:14px;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li a:hover,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li a:hover,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li a:hover,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li a:hover,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li a:hover {  
+		color:#ffffff;
+	}
+
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two label,
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three label,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four label,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five label{ 
+		color:#fff;
+		text-decoration:none;
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:13px;
+		text-align:left;
+	}
+
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two label:hover,
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three label:hover,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four label:hover,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five label:hover{ 
+		background:none;
+		color:#efefef;
+	}
+
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one i,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two i,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three i,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four i,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five i{
+	    margin:6px 0 0 0;
+		float:right;
+		color:#efefef; 
+	    font-style:normal; 
+	    font-weight:normal;
+        font-size:14px;
+		vertical-align:baseline;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu ul.flat-responsive-menu li div.wrapper.social{
+	    opacity:0;
+	    display:none/9;
+		position:absolute;
+        left:-9999px;    
+	}
+	
+	.flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu ul.flat-responsive-menu li:hover div.wrapper.social{
+	    opacity:1;
+	    display:block/9;
+		left:100%;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four{
+	    opacity:1;
+	    display:block/9;
+		top:0;
+		left:100%;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five{
+	    opacity:1;
+	    display:block/9;
+		top:0;
+		left:-100%;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li li > a{
+	    display:block;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+    .flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.social{
+		text-shadow:none;
+		-webkit-transition:-webkit-transform 0.4s, opacity 0.4s;
+              -moz-transition:-moz-transform 0.4s, opacity 0.4s;
+		        -ms-transition:-ms-transform 0.4s, opacity 0.4s;
+		          -o-transition:-o-transform 0.4s, opacity 0.4s;
+		                transition:transform 0.4s, opacity 0.4s;
+				
+    }
+	
+/*	--------------------------------------------------
+	:: Grid Container & Columns
+	-------------------------------------------------- */
+	
+    .box {
+	    background-color:#eee;
+	    font-weight:normal;
+        font-style:normal;	
+        text-align:center;		
+	    font-family:"Courier New", Courier, monospace; 
+	    color:#999; 
+		font-size:13px;
+	    margin:7px 0; 
+	    padding:7px 0; 
+		-webkit-box-sizing:border-box;
+	       -moz-box-sizing:border-box; 
+	            box-sizing:border-box;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper{ 
+	    background-color:#212121;
+		overflow:hidden;
+		padding:30px 25px;
+		top:-1px;
+		left:100%;
+    }
+	
+	.grid,
+    .demo-columns { 
+	    width:700px;
+    }
+	
+	.login{ 
+	    width:400px;
+    }
+	
+	.social{ 
+    }
+	
+	.grid-container{ 
+	    width:100%;
+		-webkit-box-sizing:border-box;
+	       -moz-box-sizing:border-box; 
+	            box-sizing:border-box;
+    }
+
+    .grid-container .column-one,
+    .grid-container .column-two,
+    .grid-container .column-three,
+    .grid-container .column-four,
+    .grid-container .column-five,
+    .grid-container .column-six,
+    .grid-container .column-seven,
+    .grid-container .column-eight,
+    .grid-container .column-nine,
+    .grid-container .column-ten,
+    .grid-container .column-eleven,
+    .grid-container .column-twelve{
+	    display:inline-block;
+	    float:left;
+	    margin-left:1%;
+	    margin-right:1%;
+    }
+
+    .grid-container .column-one { width:6.333%; }
+    .grid-container .column-two { width:14.666%; }
+    .grid-container .column-three { width:23%; }
+    .grid-container .column-four { width:31.333%; }
+    .grid-container .column-five { width:39.666%; }
+    .grid-container .column-six { width:48%; }
+    .grid-container .column-seven { width:56.333%; }
+    .grid-container .column-eight { width:64.666%; }
+    .grid-container .column-nine { width:73%; }
+    .grid-container .column-ten { width:81.333%; }
+    .grid-container .column-eleven { width:89.666%; }
+    .grid-container .column-twelve { width:98%; }
+	
+/*	--------------------------------------------------
+	:: Lists
+	-------------------------------------------------- */
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns ol {
+	    margin:0;
+		padding:0;
+	    list-style:none;
+    }
+
+    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns ol li {
+		width:100%;
+		border:none;
+		background-color:#eee;
+		text-align:center;
+		margin:0 0 5px 0;
+		padding:0;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns ol li:hover{
+		border:none;
+    }
+
+    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns ol li a {
+	    font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:13px;
+	    color:#777;
+        line-height:20px;
+		padding:5px 0;
+	    margin:0;
+    }
+
+	.flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns ol i {
+		margin-right:10px;
+		font-weight:normal;
+		font-style:normal;
+		vertical-align:baseline;
+		color:#999;
+    }
+
+/*	--------------------------------------------------
+	:: Login & Register Form
+	-------------------------------------------------- */
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .header h4{ 
+	    border-bottom:1px solid #ddd;
+	    font-weight:normal;
+        font-style:normal;
+        font-size:16px;		
+	    font-family:"Courier New", Courier, monospace; 
+	    color:#777; 
+	    margin:0 0 10px 0; 
+	    padding:0 0 10px 0; 
+	}
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .header h4 i { 
+        font-style:normal; 
+	    font-weight:normal; 
+	    font-size:13px;
+		margin-right:10px;
+		vertical-align:baseline;		
+	}
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="text"],
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="email"],
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="password"]{ 
+	    border:1px solid #ccc; 
+		width:100%;
+	    padding:10px;
+	    outline:none;
+        margin-bottom:10px;		
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:13px; 
+	    color:#999; 
+		box-shadow:none;
+	    background-color:#fff; 
+		font-style:normal;  
+	    font-weight:normal;
+		display:block;
+		-webkit-border-radius:3px;
+	       -moz-border-radius:3px; 
+	            border-radius:3px;
+		-webkit-box-sizing:border-box;
+	       -moz-box-sizing:border-box; 
+	            box-sizing:border-box;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="text"]:focus,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="email"]:focus,
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section input[type="password"]:focus {  
+		border-color:#bbb;
+		color:#333;
+		outline:none;
+	}
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section fieldset { 
+	    border:none; 
+	    padding:0; 
+	    margin:0; 
+	}
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section button { 
+	    float:right;
+        margin:0;		
+	}
+	
+/*  --------------------------------------------------
+    :: Checkbox
+    -------------------------------------------------- */ 
+	
+    .flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox input[type="checkbox"]{
+	    position:absolute;
+		display:block;
+	    -moz-opacity:0;
+	    -webkit-opacity:0;
+	    opacity:0;
+		cursor:pointer;
+    }
+
+    .flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox input[type="checkbox"] + label{
+		text-decoration:none; 
+	    font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:11px; 
+	    color:#777;
+		margin:0;
+		padding:0;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox a{
+		text-decoration:none; 
+	    font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:11px; 
+	    color:#777;
+		margin:0;
+		padding:0;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox a:hover{
+	    color:#999;
+    }
+	
+    .flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox input[type="checkbox"] + label span {
+	    display:inline-block;
+	    width:25px;
+	    height:25px;
+	    vertical-align:middle;
+        margin:0 5px 0 0;
+        background-repeat:no-repeat;
+		background-image:url("../Images/Checkbox.png");
+	    background-position:0 -27px;
+    }
+
+    .flat-menu ul.flat-responsive-menu li div.wrapper.login .section div.checkbox input[type="checkbox"]:checked + label span {
+	    background-image:url("../Images/Checkbox.png");
+	    background-position:0 0;
+    }
+	
+/*	--------------------------------------------------
+	:: Social Links
+	-------------------------------------------------- */
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.social h4{
+	    border-bottom:1px solid #ddd;
+	    font-weight:normal;
+        font-style:normal;
+        font-size:16px;		
+	    font-family:"Courier New", Courier, monospace; 
+	    color:#777; 
+	    margin:0 0 10px 0; 
+	    padding:0 0 10px 0;
+    }
+	
+    .flat-menu ul.flat-responsive-menu li div.wrapper.social ul{
+	    margin:0;
+		padding:0;
+	    list-style:none;
+		text-align:center;
+	    width:100%;
+    }
+		
+    .flat-menu ul.flat-responsive-menu li div.wrapper.social ul li{
+	    background-color:#fff;
+	    padding:0;
+		margin:0;
+		border:none;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.social ul li:hover {
+	    background-color:#eee;
+		border:none;
+    }
+	
+	.flat-menu ul.flat-responsive-menu li div.wrapper.social i {
+	    font-weight:normal;
+        font-style:normal;
+        font-size:16px;		 
+	    color:#777; 
+		margin:0;
+    }
+	
+/*	--------------------------------------------------
+	:: Button Container & Sizes
+	-------------------------------------------------- */	
+	
+	button.button-large {  
+		padding:15px 30px 14px 30px;
+	}
+	
+	button.button-large i{  
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-size:13px; 
+	    color:#fff;
+        margin-right:10px;
+		vertical-align:baseline;
+	}
+	
+	button.button-normal{ 
+		padding:13px 25px 12px 25px;
+	}
+	
+	button.button-normal i{  
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-size:13px; 
+	    color:#fff;
+        margin-right:10px;
+		vertical-align:baseline;
+	}
+	
+	button.button-small{ 
+		padding:11px 20px 10px 20px;
+	}
+	
+	button.button-small i{  
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-size:13px; 
+	    color:#fff;
+        margin-right:10px;
+		vertical-align:baseline;
+	}
+	
+	button.button-mini{ 
+		padding:9px 15px 8px 15px;
+	}
+	
+	button.button-mini i{  
+		font-style:normal; 
+	    font-weight:normal; 
+	    font-size:13px; 
+	    color:#fff;
+        margin-right:10px;
+		vertical-align:baseline;
+	}
+
+/*	--------------------------------------------------
+	:: Button Configuration
+	-------------------------------------------------- */
+	
+    .button{
+	    display:inline-block;
+	    position:relative;
+        font-style:normal; 
+	    font-weight:normal; 
+	    font-family:"Courier New", Courier, monospace; 
+	    font-size:14px;
+		margin:0;
+	    color:#fff;
+		border:none;
+		outline:none;
+	    text-decoration:none;
+        text-align:center;
+		cursor:pointer;
+		-webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        border-radius:2px;
+    }
+	
+/*	--------------------------------------------------
+	:: Button Blue
+	-------------------------------------------------- */
+	
+	.button-blue {
+	    background-color:#618da1;
+		border-bottom:1px solid #447085;
+    }
+	
+	.button-blue:hover {
+        background-color:#5b879a;
+		border-bottom:1px solid #447085;
+    }
+	
+	.button-blue:active {
+        background-color:#618da1;
+		border-bottom:1px solid #447085;
+    }
+	
+/*	--------------------------------------------------
+	:: Button Red
+	-------------------------------------------------- */
+
+	.button-red {
+	    background-color:#e0635b;
+		border-bottom:1px solid #c14b44;
+    }
+	
+	.button-red:hover {
+        background-color:#d76059;
+		border-bottom:1px solid #c14b44;
+    }
+	
+	.button-red:active {
+        background-color:#e0635b;
+		border-bottom:1px solid #c14b44;
+    }
+	
+/*	--------------------------------------------------
+	:: Button Green
+	-------------------------------------------------- */
+	
+	.button-green {
+	    background-color:#96aa39;
+		border-bottom:1px solid #7b8b2f;
+    }
+	
+	.button-green:hover {
+        background-color:#8ea134;
+		border-bottom:1px solid #7b8b2f;
+    }
+	
+	.button-green:active {
+        background-color:#96aa39;
+		border-bottom:1px solid #7b8b2f;
+    }
+	
+/*	--------------------------------------------------
+	:: Button Orange
+	-------------------------------------------------- */
+	
+	.button-orange {
+	    background-color:#de5f41;
+		border-bottom:1px solid #be4527;
+    }
+	
+	.button-orange:hover {
+        background-color:#d45639;
+		border-bottom:1px solid #be4527;
+    }
+	
+	.button-orange:active {
+        background-color:#de5f41;
+		border-bottom:1px solid #be4527;
+    }	
+
+/*	--------------------------------------------------
+	:: Theme Dark Color Blue
+	-------------------------------------------------- */
+	
+	.flat-menu-dark-blue .header-title {
+		background-color:#212121;
+	}
+	
+	.flat-menu-dark-blue {
+		background-color:#272e38;
+	}
+	
+	.flat-menu-dark-blue ul.flat-responsive-menu > li {
+		border-top:1px solid #212121;
+		border-bottom:1px solid #1c2027;
+		border-left:5px solid #272e38;
+	}
+	
+	.flat-menu-dark-blue ul.flat-responsive-menu > li:hover {
+		background-color:#1c2027;
+	    border-left:5px solid #618da1;
+		text-shadow:0 0 4px #bbb;
+    }	
+
+/*	--------------------------------------------------
+	:: Theme Dark Color Green
+	-------------------------------------------------- */
+	
+	.flat-menu-dark-green .header-title {
+		background-color:#212121;
+	}
+	
+	.flat-menu-dark-green {
+		background-color:#272e38;
+	}
+	
+	.flat-menu-dark-green ul.flat-responsive-menu > li {
+		border-top:1px solid #212121;
+		border-bottom:1px solid #1c2027;
+		border-left:5px solid #272e38;
+	}
+	
+	.flat-menu-dark-green ul.flat-responsive-menu > li:hover {
+		background-color:#1c2027;
+	    border-left:5px solid #96aa39;
+		text-shadow:0 0 4px #bbb;
+    }	
+	
+/*	--------------------------------------------------
+	:: Theme Dark Color Red
+	-------------------------------------------------- */
+	
+	.flat-menu-dark-red .header-title {
+		background-color:#212121;
+	}
+	
+	.flat-menu-dark-red {
+		background-color:#272e38;
+	}
+	
+	.flat-menu-dark-red ul.flat-responsive-menu > li {
+		border-top:1px solid #212121;
+		border-bottom:1px solid #1c2027;
+		border-left:5px solid #272e38;
+	}
+	
+	.flat-menu-dark-red ul.flat-responsive-menu > li:hover {
+		background-color:#1c2027;
+	    border-left:5px solid #e0635b;
+		text-shadow:0 0 4px #bbb;
+    }
+	
+/*	--------------------------------------------------
+	:: Theme Dark Color Orange
+	-------------------------------------------------- */
+	
+	.flat-menu-dark-orange .header-title {
+		background-color:#212121;
+	}
+	
+	.flat-menu-dark-orange {
+		background-color:#ffffff;
+	}
+	
+	.flat-menu-dark-orange ul.flat-responsive-menu > li {
+		border-left:0 solid #272e38;
+	}
+	
+	.flat-menu-dark-orange ul.flat-responsive-menu > li:hover {
+	    background-color:#ffffff;
+	    border-left:0 solid #de5f41;
+		text-shadow:0 0 4px #fff;
+    }
+	
+/*	--------------------------------------------------
+	:: Theme Light Color Blue
+	-------------------------------------------------- */
+	
+	.flat-menu-light-blue .header-title {
+		background-color:#ddd;
+	}
+	
+	.flat-menu-light-blue {
+		background-color:#ccc;
+	}
+	
+	.flat-menu-light-blue ul.flat-responsive-menu > li {
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #bbb;
+		border-left:5px solid #ccc;
+	}
+	
+	.flat-menu-light-blue ul.flat-responsive-menu > li:hover {
+	    background-color:#bbb;
+	    border-left:5px solid #618da1;
+		text-shadow:0 0 4px #bbb;
+    }	
+
+/*	--------------------------------------------------
+	:: Theme Light Color Green
+	-------------------------------------------------- */
+	
+	.flat-menu-light-green .header-title {
+		background-color:#ddd;
+	}
+	
+	.flat-menu-light-green {
+		background-color:#ccc;
+	}
+	
+	.flat-menu-light-green ul.flat-responsive-menu > li {
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #bbb;
+		border-left:5px solid #ccc;
+	}
+	
+	.flat-menu-light-green ul.flat-responsive-menu > li:hover {
+		background-color:#bbb;
+	    border-left:5px solid #96aa39;
+		text-shadow:0 0 4px #bbb;
+    }	
+	
+/*	--------------------------------------------------
+	:: Theme Light Color Red
+	-------------------------------------------------- */
+	
+	.flat-menu-light-red .header-title {
+		background-color:#ddd;
+	}
+	
+	.flat-menu-light-red {
+		background-color:#ccc;
+	}
+	
+	.flat-menu-light-red ul.flat-responsive-menu > li {
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #bbb;
+		border-left:5px solid #ccc;
+	}
+	
+	.flat-menu-light-red ul.flat-responsive-menu > li:hover {
+		background-color:#bbb;
+	    border-left:5px solid #e0635b;
+		text-shadow:0 0 4px #bbb;
+    }
+	
+/*	--------------------------------------------------
+	:: Theme Light Color Orange
+	-------------------------------------------------- */
+	
+	.flat-menu-light-orange .header-title {
+		background-color:#ddd;
+	}
+	
+	.flat-menu-light-orange {
+		background-color:#ccc;
+	}
+	
+	.flat-menu-light-orange ul.flat-responsive-menu > li {
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #bbb;
+		border-left:5px solid #ccc;
+	}
+	
+	.flat-menu-light-orange ul.flat-responsive-menu > li:hover {
+		background-color:#bbb;
+	    border-left:5px solid #de5f41;
+		text-shadow:0 0 4px #bbb;
+    }
+	
+/*	--------------------------------------------------
+	:: Animations Effects
+	-------------------------------------------------- */
+
+    .flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:scale(1.3);
+		   -moz-transform:scale(1.3);
+             -o-transform:scale(1.3);
+                transform:scale(1.3);
+    }	
+	
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-zoom-in ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-zoom-in ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-zoom-in ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:scale(1);
+		   -moz-transform:scale(1);
+             -o-transform:scale(1);
+                transform:scale(1);
+    }
+	
+	.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:scale(0.5);
+		   -moz-transform:scale(0.5);
+             -o-transform:scale(0.5);
+                transform:scale(0.5);
+    }	
+	
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-zoom-out ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-zoom-out ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-zoom-out ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:scale(1);
+		   -moz-transform:scale(1);
+             -o-transform:scale(1);
+                transform:scale(1);
+    }
+	
+	.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-flip ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-flip ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-flip ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-flip ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:rotatey(-90deg) scale(1);
+	       -moz-transform:rotatey(-90deg) scale(1);
+	         -o-transform:rotatey(-90deg) scale(1);
+	        -ms-transform:rotatey(-90deg) scale(1);
+	            transform:rotatey(-90deg) scale(1);
+    }	
+	
+	.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-flip ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-flip ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-flip ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:rotatey(0deg) scale(1);
+	       -moz-transform:rotatey(0deg) scale(1);
+	         -o-transform:rotatey(0deg) scale(1);
+	        -ms-transform:rotatey(0deg) scale(1);
+	            transform:rotatey(0deg) scale(1);
+    }
+	
+	.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-five {
+	    -webkit-transform:translateX(-10%);
+	       -moz-transform:translateX(-10%);
+	         -o-transform:translateX(-10%);
+	            transform:translateX(-10%);
+    }
+
+	.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:translateX(-5%);
+	       -moz-transform:translateX(-5%);
+	         -o-transform:translateX(-5%);
+	            transform:translateX(-5%);
+    }	
+	
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-slide-left ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-slide-left ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-slide-left ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:translateX(0%);
+	       -moz-transform:translateX(0%);
+	         -o-transform:translateX(0%);
+	            transform:translateX(0%);
+    }
+	
+	.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-five {
+	    -webkit-transform:translateX(10%);
+	       -moz-transform:translateX(10%);
+	         -o-transform:translateX(10%);
+	            transform:translateX(10%);
+    }
+
+	.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:translateX(5%);
+	       -moz-transform:translateX(5%);
+	         -o-transform:translateX(5%);
+	            transform:translateX(5%);
+    }	
+	
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-slide-right ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-slide-right ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-slide-right ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:translateX(0%);
+	       -moz-transform:translateX(0%);
+	         -o-transform:translateX(0%);
+	            transform:translateX(0%);
+    }
+	
+	.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:translateY(-15%);
+	       -moz-transform:translateY(-15%);
+	         -o-transform:translateY(-15%);
+	            transform:translateY(-15%);
+    }	
+	
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-slide-down ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-slide-down ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-slide-down ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:translateY(0%);
+	       -moz-transform:translateY(0%);
+	         -o-transform:translateY(0%);
+	            transform:translateY(0%);
+    }
+	
+	.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:translateY(15%);
+	       -moz-transform:translateY(15%);
+	         -o-transform:translateY(15%);
+	            transform:translateY(15%);
+    }	
+	
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-slide-up ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-slide-up ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-slide-up ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:translateY(0%);
+	       -moz-transform:translateY(0%);
+	         -o-transform:translateY(0%);
+	            transform:translateY(0%);
+    }
+	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:rotateY(-360deg);
+	       -moz-transform:rotateY(-360deg);
+	         -o-transform:rotateY(-360deg);
+	            transform:rotateY(-360deg);  
+    }	
+	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-rotate-horizontal ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:rotateY(360deg);
+	       -moz-transform:rotateY(360deg);
+	         -o-transform:rotateY(360deg);
+	            transform:rotateY(360deg);
+    }
+	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-two,
+    .flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-four,
+    .flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-five,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.grid,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.demo-columns,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.login,
+    .flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.social {
+	    -webkit-transform:rotateX(-360deg);
+	       -moz-transform:rotateX(-360deg);
+	         -o-transform:rotateX(-360deg);
+	            transform:rotateX(-360deg);  
+    }	
+	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+    .flat-menu-rotate-vertical ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.grid,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.login,
+	.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.social{
+	    -webkit-transform:rotateX(360deg);
+	       -moz-transform:rotateX(360deg);
+	         -o-transform:rotateX(360deg);
+	            transform:rotateX(360deg);
+    }
+	
+/*	--------------------------------------------------
+	:: Note: Design for a width of 480px
+	-------------------------------------------------- */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		.nopad {
+			padding-left:15px !important;
+			padding-right:15px !important;
+		}
+		.breadcrumb-wrapper {display:none;}
+		#main {padding-left:0 !important;}
+        #sidebar,
+		.flat-menu,
+		.flat-menu ul.flat-responsive-menu{
+			width:100%;
+			margin:0 auto;
+			text-align:center;
+	    }
+		
+		.flat-menu-fixed{
+			position:relative;
+	    }
+		
+		.header-title{
+			display:block;
+	    }
+		
+	    .toggle-menu-label{
+            display:block;
+			padding:10px 5px;
+        }
+		
+		.flat-menu span.three-line-menu{
+            float:right;
+		}
+		
+		.three-line-menu {
+            position:relative;
+            margin-right:15px;
+        }
+		
+        .three-line-menu:before {
+            content:"";
+            position:absolute;
+            float:right;
+            top:-1px;
+            width:25px;
+            height:4px;
+            background-color:#fff;
+            box-shadow:0 12px 0 0 #fff, 0 6px 0 0 #fff;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li:hover:last-child,
+		.flat-menu ul.flat-responsive-menu > li:last-child{
+		    border-bottom:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li:hover:first-child,
+		.flat-menu ul.flat-responsive-menu > li:first-child{
+		    border-top:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li,
+        .flat-menu ul.flat-responsive-menu > li:hover{
+		    float:none;
+			border-left:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu li > label { 
+		    padding:10px 15px;
+		}
+		
+		.flat-menu ul.flat-responsive-menu li a,
+		.flat-menu ul.flat-responsive-menu label {
+		    text-align:left;
+        }
+		
+		.flat-menu ul.flat-responsive-menu {
+            position:absolute;
+            opacity:0;
+            visibility:hidden;
+			display:none/9;
+			top:75px;
+        }
+		
+		.flat-menu input.toggle-menu-input:checked ~ ul.flat-responsive-menu{
+		    opacity:1;
+            visibility:visible;
+			display:block/9;
+			top:56px;
+			
+			-webkit-transition-property:opacity, top;
+            -moz-transition-property:opacity, top;
+            -o-transition-property:opacity, top;
+            transition-property:opacity, top;
+		
+            -webkit-transition-duration:0.3s, 0.3s;
+            -moz-transition-duration:0.3s, 0.3s;
+            -o-transition-duration:0.3s, 0.3s;
+            transition-duration:0.3s, 0.3s;
+		
+            -webkit-transition-timing-function:ease-in-out;
+            -moz-transition-timing-function:ease-in-out;
+            -o-transition-timing-function:ease-in-out;
+            transition-timing-function:ease-in-out;
+		}
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+        .flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{
+	        opacity:0;
+	        visibility:hidden;
+	        display:none/9;
+		    position:absolute;
+			-webkit-transition:none;
+            -moz-transition:none;
+            -o-transition:none;
+            transition:none;
+        }
+	
+	    .flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	    .flat-menu ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.social{
+	        opacity:0;
+			left:0;
+	        visibility:hidden;
+	        display:none/9;
+			-webkit-transition:none;
+            -moz-transition:none;
+            -o-transition:none;
+            transition:none;
+        }
+		
+		.flat-menu ul.flat-responsive-menu input.menu-1 ~ ul.menu-dropdown-one,
+        .flat-menu ul.flat-responsive-menu input.menu-2 ~ ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu input.menu-3 ~ ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu input.menu-4 ~ ul.menu-dropdown-four,
+		.flat-menu ul.flat-responsive-menu input.menu-5 ~ ul.menu-dropdown-five,
+		.flat-menu ul.flat-responsive-menu input.menu-6 ~ div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu input.menu-7 ~ div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu input.menu-8 ~ div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu input.menu-9 ~ div.wrapper.social{
+	  	    height:0;
+            opacity:0;
+	        visibility:hidden;
+	        display:none/9;
+        }
+		
+        .flat-menu ul.flat-responsive-menu input.menu-1:checked ~ ul.menu-dropdown-one,
+        .flat-menu ul.flat-responsive-menu input.menu-2:checked ~ ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu input.menu-3:checked ~ ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu input.menu-4:checked ~ ul.menu-dropdown-four,
+		.flat-menu ul.flat-responsive-menu input.menu-5:checked ~ ul.menu-dropdown-five{
+            position:static;
+            height:auto;
+            opacity:1;
+            visibility:visible;
+			display:block/9;
+        }
+		
+		.flat-menu ul.flat-responsive-menu input.menu-6:checked ~ div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu input.menu-7:checked ~ div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu input.menu-8:checked ~ div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu input.menu-9:checked ~ div.wrapper.social{
+            position:static;
+			height:auto;
+            opacity:1;
+			overflow:hidden;
+            visibility:visible;
+			display:block/9;
+        }
+		
+		.flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{ 
+		    width:370px;
+	    }
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li{ 
+		    width:100%;
+			border-left:none;
+			border-right:none;
+	    }
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{ 
+		    top:0;
+		    left:0;
+	    }
+			
+		.grid-container .column-one,
+        .grid-container .column-two,
+        .grid-container .column-three,
+        .grid-container .column-four,
+        .grid-container .column-five,
+        .grid-container .column-six,
+        .grid-container .column-seven,
+        .grid-container .column-eight,
+        .grid-container .column-nine,
+        .grid-container .column-ten,
+        .grid-container .column-eleven,
+        .grid-container .column-twelve { width:98%; }
+		
+		.flat-menu-dark-blue ul.flat-responsive-menu > li,
+        .flat-menu-dark-blue ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-blue ul.flat-responsive-menu > li,
+        .flat-menu-light-blue ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #79a1b3;
+		    border-bottom:1px solid #487d95;
+			background-color:#618da1;
+		}
+		
+		.flat-menu-dark-green ul.flat-responsive-menu > li,
+        .flat-menu-dark-green ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-green ul.flat-responsive-menu > li,
+        .flat-menu-light-green ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #aac045;
+		    border-bottom:1px solid #7b8b2f;
+			background-color:#96aa39;
+		}
+		
+		.flat-menu-dark-red ul.flat-responsive-menu > li,
+        .flat-menu-dark-red ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-red ul.flat-responsive-menu > li,
+        .flat-menu-light-red ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #f1837c;
+		    border-bottom:1px solid #c44d45;
+			background-color:#e0635b;
+		}
+		
+		.flat-menu-dark-orange ul.flat-responsive-menu > li,
+        .flat-menu-dark-orange ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-orange ul.flat-responsive-menu > li,
+        .flat-menu-light-orange ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #dedede;
+		    border-bottom:0 solid #dedede;
+			background-color:#fff;
+		}
+		
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-zoom-in ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-zoom-in ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-zoom-out ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-zoom-out ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-flip ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-flip ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-flip ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-five {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-left ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-left ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-left ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-five {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-right ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-right ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-right ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-down ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-down ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-down ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-up ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-up ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-up ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none; 
+		}	
+		
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;  
+		}	
+		
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+    }
+	
+/*	--------------------------------------------------
+	:: Note: Design for a width of 320px
+	-------------------------------------------------- */
+
+    @media only screen and (max-width: 479px) {
+				.breadcrumb-wrapper {display:none;}
+
+		#sidebar,
+		.flat-menu,
+		.flat-menu ul.flat-responsive-menu{
+			width:100%;
+			margin:0 auto;
+	    }
+		
+		.flat-menu-fixed{
+			position:relative;
+	    }
+		
+		.header-title{
+			display:block;
+	    }
+		
+	    .toggle-menu-label{
+            display:block;
+			padding:10px 5px;
+        }
+		
+		.flat-menu span.three-line-menu{
+            float:right;
+		}
+		
+		.three-line-menu {
+            position:relative;
+            margin-right:15px;
+        }
+		
+        .three-line-menu:before {
+            content:"";
+            position:absolute;
+            float:right;
+            top:-1px;
+            width:25px;
+            height:4px;
+            background-color:#fff;
+            box-shadow:0 12px 0 0 #fff, 0 6px 0 0 #fff;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li,
+        .flat-menu ul.flat-responsive-menu > li:hover{
+		    float:none;
+            border-left:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li:hover:last-child,
+		.flat-menu ul.flat-responsive-menu > li:last-child{
+		    border-bottom:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu > li:hover:first-child,
+		.flat-menu ul.flat-responsive-menu > li:first-child{
+		    border-top:none;
+		}
+		
+		.flat-menu ul.flat-responsive-menu li > label { 
+		    padding:10px 15px;
+		}
+		
+		
+		.flat-menu ul.flat-responsive-menu li a,
+		.flat-menu ul.flat-responsive-menu label {
+		    text-align:left;
+        }
+		
+		.flat-menu ul.flat-responsive-menu {
+            position:absolute;
+            opacity:0;
+            visibility:hidden;
+			display:none/9;
+			top:75px;
+        }
+		
+		.flat-menu input.toggle-menu-input:checked ~ ul.flat-responsive-menu{
+		    opacity:1;
+            visibility:visible;
+			display:block/9;
+			top:56px;
+			
+			-webkit-transition-property:opacity, top;
+            -moz-transition-property:opacity, top;
+            -o-transition-property:opacity, top;
+            transition-property:opacity, top;
+		
+            -webkit-transition-duration:0.3s, 0.3s;
+            -moz-transition-duration:0.3s, 0.3s;
+            -o-transition-duration:0.3s, 0.3s;
+            transition-duration:0.3s, 0.3s;
+		
+            -webkit-transition-timing-function:ease-in-out;
+            -moz-transition-timing-function:ease-in-out;
+            -o-transition-timing-function:ease-in-out;
+            transition-timing-function:ease-in-out;
+		}
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+        .flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{
+	        opacity:0;
+	        visibility:hidden;
+	        display:none/9;
+		    position:absolute;
+			-webkit-transition:none;
+            -moz-transition:none;
+            -o-transition:none;
+            transition:none;
+        }
+	
+	    .flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+	    .flat-menu ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li:hover div.wrapper.social{
+	        opacity:0;
+			left:0;
+	        visibility:hidden;
+	        display:none/9;
+			-webkit-transition:none;
+            -moz-transition:none;
+            -o-transition:none;
+            transition:none;
+        }
+		
+		.flat-menu ul.flat-responsive-menu input.menu-1 ~ ul.menu-dropdown-one,
+        .flat-menu ul.flat-responsive-menu input.menu-2 ~ ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu input.menu-3 ~ ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu input.menu-4 ~ ul.menu-dropdown-four,
+		.flat-menu ul.flat-responsive-menu input.menu-5 ~ ul.menu-dropdown-five,
+		.flat-menu ul.flat-responsive-menu input.menu-6 ~ div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu input.menu-7 ~ div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu input.menu-8 ~ div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu input.menu-9 ~ div.wrapper.social{
+	  	    height:0;
+            opacity:0;
+	        visibility:hidden;
+	        display:none/9;
+        }
+		
+        .flat-menu ul.flat-responsive-menu input.menu-1:checked ~ ul.menu-dropdown-one,
+        .flat-menu ul.flat-responsive-menu input.menu-2:checked ~ ul.menu-dropdown-two,
+		.flat-menu ul.flat-responsive-menu input.menu-3:checked ~ ul.menu-dropdown-three,
+        .flat-menu ul.flat-responsive-menu input.menu-4:checked ~ ul.menu-dropdown-four,
+		.flat-menu ul.flat-responsive-menu input.menu-5:checked ~ ul.menu-dropdown-five{
+            position:static;
+            height:auto;
+            opacity:1;
+            visibility:visible;
+			display:block/9;
+        }
+		
+		.flat-menu ul.flat-responsive-menu input.menu-6:checked ~ div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu input.menu-7:checked ~ div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu input.menu-8:checked ~ div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu input.menu-9:checked ~ div.wrapper.social{
+            position:static;
+			height:auto;
+            opacity:1;
+			overflow:hidden;
+            visibility:visible;
+			display:block/9;
+        }
+		
+		.flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{ 
+		    width:250px;
+	    }
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li{ 
+		    width:100%;
+			border-left:none;
+			border-right:none;
+	    }
+		
+		.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three,	
+	    .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four,
+        .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu ul.flat-responsive-menu li div.wrapper.grid,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.demo-columns,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.login,
+	    .flat-menu ul.flat-responsive-menu li div.wrapper.social{ 
+		    top:0;
+		    left:0;
+	    }
+				
+		.grid-container .column-one,
+        .grid-container .column-two,
+        .grid-container .column-three,
+        .grid-container .column-four,
+        .grid-container .column-five,
+        .grid-container .column-six,
+        .grid-container .column-seven,
+        .grid-container .column-eight,
+        .grid-container .column-nine,
+        .grid-container .column-ten,
+        .grid-container .column-eleven,
+        .grid-container .column-twelve { width:98%; }
+		
+		.flat-menu-dark-blue ul.flat-responsive-menu > li,
+        .flat-menu-dark-blue ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-blue ul.flat-responsive-menu > li,
+        .flat-menu-light-blue ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #79a1b3;
+		    border-bottom:1px solid #487d95;
+			background-color:#618da1;
+		}
+		
+		.flat-menu-dark-green ul.flat-responsive-menu > li,
+        .flat-menu-dark-green ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-green ul.flat-responsive-menu > li,
+        .flat-menu-light-green ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #aac045;
+		    border-bottom:1px solid #7b8b2f;
+			background-color:#96aa39;
+		}
+		
+		.flat-menu-dark-red ul.flat-responsive-menu > li,
+        .flat-menu-dark-red ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-red ul.flat-responsive-menu > li,
+        .flat-menu-light-red ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #f1837c;
+		    border-bottom:1px solid #c44d45;
+			background-color:#e0635b;
+		}
+		
+			.flat-menu-dark-orange ul.flat-responsive-menu > li,
+        .flat-menu-dark-orange ul.flat-responsive-menu > li:hover,
+		.flat-menu-light-orange ul.flat-responsive-menu > li,
+        .flat-menu-light-orange ul.flat-responsive-menu > li:hover{
+            border-top:1px solid #dedede;
+		    border-bottom:0 solid #dedede;
+			background-color:#fff;
+		}
+		
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-zoom-in ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-zoom-in ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-zoom-in ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-zoom-in ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-zoom-in ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-zoom-in ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-zoom-out ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-zoom-out ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-zoom-out ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-zoom-out ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-zoom-out ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-zoom-out ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-flip ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-flip ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-flip ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-flip ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-flip ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-flip ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-flip ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-left ul.flat-responsive-menu li ul.menu-dropdown-five {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-left ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-left ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-left ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-left ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-left ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-right ul.flat-responsive-menu li ul.menu-dropdown-five {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-right ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-right ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-right ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-right ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-right ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-down ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-down ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-down ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-down ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-down ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-down ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-slide-up ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-slide-up ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}	
+		
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-slide-up ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-slide-up ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-slide-up ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-slide-up ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none; 
+		}	
+		
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-rotate-horizontal ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+		
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-one,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-two,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-three,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-four,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li ul.menu-dropdown-five,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.grid,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.demo-columns,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.login,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li div.wrapper.social {
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;  
+		}	
+		
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-one,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover ul.menu-dropdown-two,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li:hover ul.menu-dropdown-three,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li li:hover ul.menu-dropdown-four,	
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li li li li:hover ul.menu-dropdown-five,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.grid,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.demo-columns,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.login,
+		.flat-menu-rotate-vertical ul.flat-responsive-menu li:hover div.wrapper.social{
+			-webkit-transform:none;
+			   -moz-transform:none;
+				 -o-transform:none;
+					transform:none;
+		}
+    }

@@ -1,0 +1,78 @@
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li {
+  border-top: 1px solid #85d536 !important;
+}
+
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-one li,
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li,
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-three li,
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-four li,
+.flat-menu ul.flat-responsive-menu li ul.menu-dropdown-five li,
+p.drop-caps.full:first-child:first-letter,
+.portfolio-filter .btn:active,
+.portfolio-filter .btn.active,
+.portfolio-filter .btn:hover,
+.portfolio-filter .btn:focus,
+.next-prev,
+.pagination > li > a,
+.pagination > li > span,
+.dmtop,
+.btn-primary,
+.demo_changer .demo-icon,
+mark,
+.progress-bar,
+#accordion-second .accordion-heading .accordion-toggle > em,
+.tooltip-inner {
+  background-color: #1e6f92;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #1e6f92;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #1e6f92;
+}
+blockquote,
+.tooltip.left .tooltip-arrow {
+  border-left-color: #1e6f92;
+}
+.tagcloud a:hover,
+.portfolio-filter .btn:active,
+.portfolio-filter .btn.active,
+.portfolio-filter .btn:hover,
+.portfolio-filter .btn:focus,
+.pagination > li > a,
+.pagination > li > span,
+.social span a:hover,
+.form-control:focus,
+.btn-primary,
+mark {
+  border-color: #1e6f92;
+}
+.tagcloud a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  background: #1e6f92;
+}
+.check li:before,
+.recent_tweets li a,
+.general-wrapper .byline,
+.post-wrapper .byline,
+.post_type,
+.portfolio-filter .btn,
+.post-footer .like:hover,
+.contact_details li i,
+.social span a:hover,
+a {
+  color: #1e6f92;
+}
+.magnifier {
+  background: #1e6f92;
+  background: rgba(119, 190, 50, 0.8);
+}
+
+.navbar-brand {
+  background: url(../images/logo.png) no-repeat scroll center rgba(0, 0, 0, 0);
+}
