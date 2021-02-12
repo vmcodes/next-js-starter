@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Posts(props) {
   let posts = props.postList.body;
-  let blog = posts.map((x) => x.post);
-  let postID = posts.map((x) => x.postID);
+  let blog = posts.map((x) => x.post).reverse();
+  let postID = posts.map((x) => x.postID).reverse();
 
   return (
     <>
