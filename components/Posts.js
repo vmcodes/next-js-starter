@@ -7,7 +7,7 @@ export default function Posts(props) {
 
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row two-columns">
           {blog &&
             blog.map((post, index) => {
